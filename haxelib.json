@@ -1,0 +1,10 @@
+{
+    "name": "haxvolt",
+    "url" : "https://github.com/ben-forster/haxvolt",
+    "license": "MIT",
+    "tags": ["Revolt", "Haxe"],
+    "description": "haxrevolt is an API wrapper for Revolt written in Haxe.",
+    "version": "0.0.1",
+    "releasenote": "",
+    "contributors": ["Ben"]
+  }
