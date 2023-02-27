@@ -57,7 +57,7 @@ class RevoltClient
                     heartbeatTimer.stop();
                 }
 
-                if (m == 4006 || m == 1000 || m == 1001) // Session has expired.
+                if (m == 4006 || m == 1000 || m == 1001) // Session has expired, otherwise connect to the Revolt Gateway.
                     {
                         session_id = "";
                         session = "";
