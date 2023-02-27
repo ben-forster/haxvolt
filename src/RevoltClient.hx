@@ -64,9 +64,22 @@ class RevoltClient
                         session_type = "";
                         canResume = false;
 
-                        Gateway.GATEWAY_URL = "wss://ws.revolt.chat?version="+Gateway.API_VERSION+"&encoding=json";
+                        Gateway.GATEWAY_URL = "wss://ws.revolt.chat?version=" + Gateway.API_VERSION + "&encoding=json";
                     }
-            }
+
+                    if (debug) 
+                    {
+                        trace("[INFO] The WebSocket has closed with code: " + m + ". Re-opening...");
+                    }
+                    connect();
+                };
+                ws.onError = (e) -> 
+                {
+                    throw("[ERROR] WebSocket threw an error.");
+                }
+        } catch (err)
+        {
+            throw(err);
         }
-}
+    }
 
