@@ -78,7 +78,12 @@ class Permissions {
             }
         }
 
+enum abstract UserPermission(String) from String to String
+{
+
+}
+
 enum abstract Permission(String) from String to String
 {
-    
+
 }
