@@ -27,8 +27,8 @@ class RevoltClient
 
     /**
         Constructor. This will start a new haxvolt instance.
-        @param _token Your session token. Works for bots only.
-        @param _debug Debug mode. This will print every single websocket incomming message from the Discord Gateway.
+        @param _token Your session token. Works for bots only as of now.
+        @param _debug Debug mode. This will print every single websocket incomming message from the Revolt Gateway.
     **/
 
     public function new(_token:String, ?_debug:Bool)
