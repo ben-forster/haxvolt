@@ -1,12 +1,12 @@
-package hxdiscord;
+package haxvolt;
 
-import hxdiscord.gateway.Gateway;
-import hxdiscord.gateway.OpCode;
-import hxdiscord.endpoints.Endpoints;
-import hxdiscord.net.WebSocketConnection;
-import hxdiscord.types.*;
-import hxdiscord.types.structTypes.*;
-import hxdiscord.utils.Https;
+import haxvolt.gateway.Gateway;
+import haxvolt.gateway.OpCode;
+import haxvolt.endpoints.Endpoints;
+import haxvolt.net.WebSocketConnection;
+import haxvolt.types.*;
+import haxvolt.types.structTypes.*;
+import haxvolt.utils.Https;
 import haxe.Timer;
 
 /**
