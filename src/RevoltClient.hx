@@ -19,11 +19,34 @@ class RevoltClient
     public static var debug:Bool;
     var ws:WebSocketConnection;
     var heartbeatTimer:Timer;
+    public var status:String = "online";
+    private var canResume:Bool = false;
+    var receivedHelloOC:Bool = false;
+    private var ignore:Bool = false;
+    private var sequence:String = "";
+    private var session:String = "";
+    private var session_type:String = "";
+    private var session_id:String = "";
+    private var resume_gateway_url:String = "";   
 
+    public var readySent:Bool = false;
+    @:dox(hide)
+    public var verified:Bool = false;
+    public var username:String = "";
+    @:dox(hide)
+    public var mfa_enabled = false;
+    public static var accountId:String = "";
+    @:dox(hide)
     public var email:Dynamic;
-    public var discriminator:String = "";
+    @:dox(hide)
+    public var password:Dynamic;
     @:dox(hide)
     public var bot:Bool = false;
+    @:dox(hide)
+    public var avatar:Dynamic;
+
+    public var presence:String = "";
+    public var presenceType:Int = 99;
 
     /**
         Constructor. This will start a new haxvolt instance.
